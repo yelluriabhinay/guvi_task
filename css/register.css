@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 100vh;
+   
+}
+
+form {
+    background-color: #0062ff90;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.633);
+    inline-size: 100%;
+    max-inline-size: 400px;
+    box-sizing: border-box;
+    
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+input,a {
+    inline-size: 100%;
+    padding: 8px;
+    margin-block-end: 10px;
+    box-sizing: border-box;
+    border-color: none;
+    border: none;
+    border-block-end: 2px solid black;
+    border-radius: 4px;
+   background-color: #45a04600;
+   color: black;
+}
+
+input[type="submit"] {
+   
+    background-color: gray ;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a079;
+}
+a
+{
+    inline-size: 20%;
+    margin-inline-start: 40%;
+    text-decoration: none;
+    border: none;
+    margin-block-start: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    margin-block-end: 10px;
+}
+
+.form-group-double {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group-double input {
+    flex: 1;
+}
+
+@media (min-inline-size: 768px) {
+    .form-group-double {
+        flex-direction: row;
+    }
+
+    .form-group-double input:first-child {
+        margin-inline-end: 10px;
+    }
+
+    .form-group-reduced-width {
+        inline-size: 45%;
+        margin-inline-end: 10px;
+    }
+}
